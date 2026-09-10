@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0d19;
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Animated Space Background */
+.stars, .twinkling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.stars {
+    z-index: 0;
+}
+
+.twinkling {
+    z-index: 1;
+    animation: move-twink-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
+
+/* Main Layout */
+.main-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 550px;
+    width: 90%;
+    padding: 20px;
+}
+
+/* Title Header */
+.game-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.2rem;
+    color: #e9e9f0;
+    text-shadow: 0 0 10px #41524e;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #a0aabf;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Action Box */
+.action-card {
+    background: rgba(20, 24, 45, 0.85);
+    border: 2px solid #1f294d;
+    border-radius: 16px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 255, 204, 0.1);
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.85rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-play {
+    background-color: #f8fffd;
+    color: #0b0d19;
+}
+
+.btn-play:hover {
+    background-color: #33ffdd;
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 255, 204, 0.7);
+}
+
+.btn-back {
+    background-color: transparent;
+    color: #ff4757;
+    border: 2px solid #ff4757;
+}
+
+.btn-back:hover {
+    background-color: #ff4757;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(255, 71, 87, 0.5);
+}
+
+/* Instructions */
+.instructions {
+    border-top: 1px solid #1f294d;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.instructions h2 {
+    font-size: 1rem;
+    color: #00ffcc;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.instructions ul {
+    list-style: none;
+}
+
+.instructions li {
+    font-size: 1.05rem;
+    color: #c0c7d6;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.key {
+    background: #14192d;
+    border: 1px solid #323d6b;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.65rem;
+    color: #ffffff;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #5d6b8a;
+}

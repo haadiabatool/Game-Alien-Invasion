@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <div class="main-container">
+        <!-- Game Header -->
+        <header class="header">
+            <h1 class="game-title">ALIEN INVASION</h1>
+            <p class="subtitle">Defend the Earth from falling invaders!</p>
+        </header>
+
+        <!-- Main Action Buttons -->
+        <div class="action-card">
+            <div class="button-group">
+                <button class="btn btn-play" onclick="launchGame()">
+                    <span class="icon">🚀</span> PLAY GAME
+                </button>
+                <button class="btn btn-back" onclick="exitToDesktop()">
+                    <span class="icon">⬅</span> RETURN TO DESKTOP
+                </button>
+            </div>
+
+            <!-- How to Play Section -->
+            <div class="instructions">
+                <h2>HOW TO PLAY</h2>
+                <ul>
+                    <li><span class="key">⬅</span> <span class="key">➔</span> Move Ship Left & Right</li>
+                    <li><span class="key">SPACE</span> Fire Lasers</li>
+                    <li><span class="key">Q</span> Quick Quit Game</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built with Python & Pygame</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script> 
+       
+</body>
+</html>
