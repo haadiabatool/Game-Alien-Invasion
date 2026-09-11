@@ -34,7 +34,7 @@ The player controls a spaceship, moves it left and right, and shoots lasers to d
 ● Glowing spaceship, alien, and laser effects<br>
 ● Styled game-over and start screens<br>
 
-##🌐 Flask Web Interface<br>
+## 🌐 Flask Web Interface<br>
 
 Flask provides the web interface and handles game launching through a dedicated route.<br>
 
@@ -42,7 +42,7 @@ Flask provides the web interface and handles game launching through a dedicated 
 ● Launches the Pygame application<br>
 ● Returns success or error messages when launching the game<br>
 
-🛠️ Built With<br>
+## 🛠️ Built With<br>
 ● Python<br>
 ● Pygame<br>
 ● Flask<br>
